@@ -224,8 +224,8 @@ namespace CableRobot
         private System.Windows.Forms.Panel controlButtonsPanel;
         private System.Windows.Forms.Label runtimeParametersLabel;
         private System.Windows.Forms.Button emergencyStopButton;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5; // Reserved for future use
+        private System.Windows.Forms.Button button4; // Reserved for future use
         private System.Windows.Forms.Button pauseButton;
         private System.Windows.Forms.Button stopButton;
         private System.Windows.Forms.Button startButton;

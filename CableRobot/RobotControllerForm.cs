@@ -113,6 +113,8 @@ namespace CableRobot
                 _contoller.SetStateAsync(state);
         }
 
+        // This function was written a day before deadline, so it's kinda crutchy
+        // TODO: Fix hardcoded constants
         private void RenderPoints()
         {
             Vector2 sz = new Vector2(8000, 3800);

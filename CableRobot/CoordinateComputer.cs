@@ -130,6 +130,8 @@ namespace CableRobot
         private void YieldPos(Vector3 p)
         {
             var dp = p - _pos;
+            // Enforce speed limit
+            // If something is triggering this exception - it's a bug
             if (dp.Length > LinearSpeed * 2)
                 throw new Exception();
             _pos = p;
@@ -204,7 +206,8 @@ namespace CableRobot
             YieldPos(end);
             FlushBlock($"GoCircleArc {center} {angle}");
         }
-        
+
+        // The method was proudly stolen from https://gamedev.stackexchange.com/questions/27056/how-to-achieve-uniform-speed-of-movement-on-a-bezier-curve
         private void GoQuadraticBezierCurve(Vector2 p0, Vector2 p1, Vector2 p2)
         {
             Vector2 B(double t) =>  p0 * (1 - t) * (1 - t) + p1 * 2 * (1 - t) * t + p2 * t * t;
@@ -244,6 +247,8 @@ namespace CableRobot
                 var b = B(ct + dt);
                 if ((b - XYPos).Length > LinearSpeed * 1.2)
                 {
+                    // Looks like this method fails sometimes.
+                    // Reduce wanted speed and try again!
                     dd /= 2.0;
                     goto again;
                 }

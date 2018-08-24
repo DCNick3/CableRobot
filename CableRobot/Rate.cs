@@ -6,9 +6,13 @@ using System.Threading;
 
 namespace CableRobot
 {
+    /// <summary>
+    /// Helper class to make some peace of code be executed specified times per secound
+    /// </summary>
     public class Rate
     {
-        private const bool UseBusySleep = true;
+        // Well, Windows scheduler can't provide us with needed time precision, so we would use busy sleep
+        private static readonly bool UseBusySleep = Environment.OSVersion.Platform == PlatformID.Win32NT;
 
         private readonly int _windowSize;
         private readonly TimeSpan _period;
@@ -41,6 +45,7 @@ namespace CableRobot
             if (_tickTimes.Count > _windowSize)
                 _windowTime -= _tickTimes.Dequeue();
         }
+        
         
         private void BusySleep(double ms)
         {

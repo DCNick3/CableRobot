@@ -6,6 +6,9 @@ using System.Text;
 
 namespace CableRobot
 {
+    /// <summary>
+    /// Parses CableRobotCode - intermediate representation of trajectory with geometric primitives
+    /// </summary>
     public class CrcParser
     {
         private readonly Dictionary<string, CommandType> _commandTypes = new Dictionary<string, CommandType>()

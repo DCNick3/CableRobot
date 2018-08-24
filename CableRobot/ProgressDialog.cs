@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace CableRobot
 {
+    /// <summary>
+    /// You like progress bars, don't you?
+    /// </summary>
     public partial class ProgressDialog : Form
     {
         private const int CP_NOCLOSE_BUTTON = 0x200;

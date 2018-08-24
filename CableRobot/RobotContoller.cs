@@ -59,6 +59,7 @@ namespace CableRobot
 
         private void AngleSenderOnProgressUpdated(object sender, (int current, int total) e)
         {
+            // We are doing it in task to reduce waiting time (which can reduce command rate)
             // ReSharper disable once MethodSupportsCancellation
             Task.Run(() =>
             {

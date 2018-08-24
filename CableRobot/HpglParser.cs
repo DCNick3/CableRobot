@@ -5,6 +5,9 @@ using System.Text;
 
 namespace CableRobot
 {
+    /// <summary>
+    /// Provides some basic support for Hpgl
+    /// </summary>
     public class HpglParser
     {
         private Vector2 _pos = new Vector2();

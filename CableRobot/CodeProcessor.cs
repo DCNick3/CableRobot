@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CableRobot
 {
+    /// <summary>
+    /// Some quick wrappers to make batch convert operations in one line
+    /// </summary>
     public static class CodeProcessor
     {
         /// <summary>
@@ -41,12 +44,5 @@ namespace CableRobot
         {
             return CoordinateComputer.ComputePoints(CrcParser.ParseCommands(code));
         }
-
-        /*
-        public static string CrcToLines(string code)
-        {
-            var commands = CrcParser.ParseCommands(code);
-            foreach (var c)
-        }*/
     }
 }

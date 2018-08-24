@@ -10,6 +10,11 @@ using Svg;
 
 namespace CableRobot
 {
+    /// <summary>
+    /// Provides VERY basic support for Scalable Vector Graphics
+    /// Ignores all elements except path
+    /// Was tested only with inkscape SVG's
+    /// </summary>
     public class SvgParser
     {
 

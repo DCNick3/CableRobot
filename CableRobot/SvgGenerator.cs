@@ -6,6 +6,9 @@ using System.Text;
 
 namespace CableRobot
 {
+    /// <summary>
+    /// Generates SVG document to render trajectory in TrajectpryForm
+    /// </summary>
     public class SvgGenerator
     {
         private const string StrokeWidthMagic = "$$strokeWidth";

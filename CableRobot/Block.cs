@@ -2,6 +2,11 @@
 
 namespace CableRobot
 {
+    /// <summary>
+    /// Named section of CRC file
+    /// Used to store metainformation about source of Commands, Points and Angles
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Block<T>
     {
         public Block(string name, T[] elements)

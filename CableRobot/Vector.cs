@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CableRobot
 {
+    // Custom Vector was introduced to add double support to reduce floating point number errors
     public struct Vector2
     {
         public double X, Y;
