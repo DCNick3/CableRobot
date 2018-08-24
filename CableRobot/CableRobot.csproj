@@ -35,6 +35,9 @@
     <StartupObject>CableRobot.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="OmronFinsUDP.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OmronFinsUDP.Net.1.0.0\lib\netstandard2.0\OmronFinsUDP.Net.dll</HintPath>
+    </Reference>
     <Reference Include="Svg, Version=2.2.1.39233, Culture=neutral, PublicKeyToken=12a0bac221edeae2, processorArchitecture=MSIL">
       <HintPath>..\packages\Svg.2.3.0\lib\net35\Svg.dll</HintPath>
     </Reference>
@@ -53,10 +56,6 @@
   <ItemGroup>
     <Compile Include="AngleSender.cs" />
     <Compile Include="HpglParser.cs" />
-    <Compile Include="Fins\FinsClient.cs" />
-    <Compile Include="Fins\FinsDriver.cs" />
-    <Compile Include="Fins\FinsException.cs" />
-    <Compile Include="Fins\FinsResponse.cs" />
     <Compile Include="InverseKinematicsComputer.cs" />
     <Compile Include="Angles.cs" />
     <Compile Include="Block.cs" />
