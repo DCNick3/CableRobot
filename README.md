@@ -8,6 +8,10 @@ Has basic support of hpgl file format (`HpglParser.cs`) and VERY basic support o
 
 Also this introduces own vector file format (an intermediate one) - CRC. `CableRobotTrajectories` contains some samples of such files
 
+![ryzen](screenshots/controller_ryzen.png)
+
+![composition](screenshots/trajectory_composition.png)
+
 # A brief algorithm of work:
 
 - Stage 1, `TrajectoryForm.cs`

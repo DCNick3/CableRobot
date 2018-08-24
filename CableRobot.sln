@@ -1,15 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CableRobot", "CableRobot\CableRobot.csproj", "{8C58AFCC-833B-4285-9F7B-238FA8E15F88}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroLengthCompute", "ZeroLengthCompute\ZeroLengthCompute.csproj", "{CA144F38-EED6-4B75-9D21-43A6FF75B310}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinsTest", "FinsTest\FinsTest.csproj", "{7E5E4211-FFF3-45D1-9C1F-8C3461F26099}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointTester", "PointTester\PointTester.csproj", "{E092EC82-63DE-4C12-85E4-EF911171C1EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{31ABC17B-B0D7-4EAB-955D-AE19071BD395}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +28,6 @@ Global
 		{CA144F38-EED6-4B75-9D21-43A6FF75B310}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA144F38-EED6-4B75-9D21-43A6FF75B310}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA144F38-EED6-4B75-9D21-43A6FF75B310}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E5E4211-FFF3-45D1-9C1F-8C3461F26099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E5E4211-FFF3-45D1-9C1F-8C3461F26099}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E5E4211-FFF3-45D1-9C1F-8C3461F26099}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E5E4211-FFF3-45D1-9C1F-8C3461F26099}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E092EC82-63DE-4C12-85E4-EF911171C1EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E092EC82-63DE-4C12-85E4-EF911171C1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E092EC82-63DE-4C12-85E4-EF911171C1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
