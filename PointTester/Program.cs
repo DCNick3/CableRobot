@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Linq;
 using CableRobot;
 
@@ -8,25 +9,26 @@ namespace PointTester
     {
         public static void Main(string[] args)
         {
-            var blocks = new Block<Vector3>[]
+            Console.WriteLine("Provide me with some points (double, double, double), and I will compute angles for it");
+            while (true)
             {
-                new Block<Vector3>("", 
+                var parts = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                    .Select(_ => double.Parse(_, CultureInfo.InvariantCulture)).ToArray();
+                var blocks = new Block<Vector3>[]
+                {
+                new Block<Vector3>("",
                     new []
                     {
-                        new Vector3(0,      0,     10), 
-                        new Vector3(0,      0,     200), 
-                        new Vector3(0,      0,     400), 
-                        new Vector3(0,      0,     600), 
-                        new Vector3(0,      0,     800), 
-                        new Vector3(0,      0,     1000),
-                    }), 
-            };
+                        new Vector3(parts[0], parts[1], parts[2]),
+                    }),
+                };
 
-            var angles = InverseKinematicsComputer.ComputeAngles(blocks).ToArray().Single();
+                var angles = InverseKinematicsComputer.ComputeAngles(blocks).ToArray().Single();
 
-            foreach (var anglese in angles.Elements)
-            {
-                Console.WriteLine(string.Join(" ", anglese.Thetas.Select(a => a / 180.0 * Math.PI)));
+                foreach (var anglese in angles.Elements)
+                {
+                    Console.WriteLine(string.Join(" ", anglese.Thetas.Select(a => a / 180.0 * Math.PI)));
+                }
             }
         }
     }
