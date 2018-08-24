@@ -1,0 +1,4 @@
+circle_arc 0 0 -1000 0 45
+circle_arc 0 0 -2000 0 70
+circle_arc 0 0 1000 0 -45
+circle_arc 0 0 2000 0 -70
